@@ -1,0 +1,19 @@
+# Pay Scale excercise expansion
+
+hours = input('How many hours: ')
+pay_rate = input('Pay Rate: ')
+
+hours = float(hours)
+pay_rate = float(pay_rate)
+
+# print(type(pay_rate))
+
+if hours > 40.0:
+  overtime = (hours - 40.0) * (pay_rate * 1.5)
+  normal_rate = 40.0 * pay_rate
+  overtime_pay = normal_rate + overtime
+  print(overtime_pay)
+
+else:
+  pay = hours * pay_rate
+  print(pay)
